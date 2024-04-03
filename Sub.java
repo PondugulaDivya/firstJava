@@ -1,29 +1,15 @@
-import java.util.Scanner;
+import java.io.*;
  
-public class Sub {
- 
-    public static void main(String[] args) {
- 
-        
-        int x, y, subtract;
- 
-       
-        Scanner sc = new Scanner(System.in);
- 
-        System.out.print("Enter first number: ");
-        
-        x = sc.nextInt();
- 
-        System.out.print("Enter second number: ");
-        
-        y = sc.nextInt();
- 
-        
-        subtract = x - y;
- 
-       
-        System.out.println("The subtraction of the given two Numbers: " + subtract );
- 
+class Sub {
+    public static int sum(int num1, int num2)
+    {
+        return num1-num2;
     }
- 
+     
+    public static void main(String[] args)
+    {
+        Sub ob = new Sub();
+        int res = ob.sum(50, 49);
+        System.out.println(res);
+    }
 }
